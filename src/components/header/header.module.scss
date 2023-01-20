@@ -1,0 +1,23 @@
+.root {
+  width: 100vw;
+  height: 10vh;
+  background-color: #3c362a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: space-evenly;
+  justify-content: space-between;
+}
+.logo {
+  color: #ffffff;
+  font-size: 3em;
+  font-weight: 600;
+}
+.nav-links {
+  text-align: start;
+  color: white;
+  text-decoration: none;
+  padding: 6px;
+  margin: 0px 20px 0px 0px;
+  font-size: 1.5em;
+}

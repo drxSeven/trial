@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
@@ -10,6 +13,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+    margin: 0px;
   }
 }
 
@@ -22,6 +26,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  flex-wrap: nowrap;
+  justify-items: start;
 }
 
 .App-link {
@@ -35,4 +41,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+.logo {
+  width: 10vw;
+  position: relative;
+  display: block;
+  margin: 10px;
+}
+.header {
+  display: flex;
+  width: 100vw;
+  height: 10vh;
+  border: 0px solid black;
+  background-color: #0c234d;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  position: static;
+  margin: 0px;
+  font-size: 3em;
+  font-weight: 600;
+  font-family: Didot, serif-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serifroboto;
+  text-align: center;
+  color: white;
+}
+.nav-links {
+  margin: 1px 10px 1px 1px;
+  color: white;
+  direction: ltr;
+  opacity: 1;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+.lnk {
+  margin: 2px;
 }
